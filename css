@@ -165,3 +165,65 @@ body {
 .socials > a:hover {
   --scale: 1;
 }
+
+/* menu */
+/* Side Navigation Container */
+.side-menu {
+  background-color: #1B1A23;
+  padding: -4px;
+  border-radius: 15px;
+  color: #F4FFFE;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 25%;
+  top: 50px;
+  left: 15px;
+  position: fixed;
+}
+
+/* Side Navigation Links */
+.side-menu a {
+  display: block;
+  color: #818181;
+  padding: 8px;
+  font-size: 26px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* When mouse hover on links in side Navigation */
+.side-menu a:hover {
+  background-color: darkred;
+  color: rgb(140, 73, 73);
+  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
+/* Side Navigation Heading */
+.side-menu h3 {
+  padding: 10px;
+}
+
+#ham-button {
+  display: block;
+  top: 20px;
+  left: 20px;
+  position: fixed;
+  z-index: 999;
+}
+
+.ham-line {
+  background-color: rgb(255, 255, 255); /* Make the lines white */
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+/* Switch to hamburger menu on small devices */
+@media only screen and ( max-width:768px) {
+  #side-menu {display: none; width:100%}
+  #ham-button {display: block;}
+}
